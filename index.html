@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>John Smith | Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>John Smith</h1>
+      <p id="position">Software Engineer</p>
+    </header>
+
+    <section>
+      <h2>Summary</h2>
+      <p class="summary">
+        <img
+          src="https://cdn2.iconfinder.com/data/icons/avatars-99/62/avatar-370-456322-512.png"
+          width="80px"
+          alt="John Smith Avatar"
+        />
+        Deadline-oriented software engineer with lots of experience. Solid
+        track record of architecting solutions that exceed client expectations.
+      </p>
+    </section>
+
+    <section>
+      <h2>Experience</h2>
+      <ul id="experience">
+        <li><b>Senior Software Engineer - Google</b> | 2018 - Present</li>
+        <li><b>Software Engineer - Facebook</b> | 2016 - 2018</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <table id="skills">
+        <tr>
+          <th>Skill</th>
+          <th>Level</th>
+        </tr>
+        <tr>
+          <td>HTML</td>
+          <td>Expert</td>
+        </tr>
+        <tr>
+          <td>CSS</td>
+          <td>Intermediate</td>
+        </tr>
+      </table>
+    </section>
+
+    <section>
+      <h2>Contact Form</h2>
+      <form id="contact-form">
+        <label for="name">Name: </label>
+        <input placeholder="Name" id="name" type="text" required /><br />
+        <label for="email">Email: </label>
+        <input placeholder="Email" id="email" type="email" required /><br />
+        <label for="message">Message: </label>
+        <textarea id="message" placeholder="Message" required></textarea><br />
+        <input type="submit" value="SEND" />
+      </form>
+      <p id="form-response" style="color: green; display: none;">
+        Thank you for contacting us!
+      </p>
+    </section>
+
+    <footer>
+      <h2>Contacts</h2>
+      <ul id="contacts">
+        <li><a href="link1" target="_blank">Sololearn</a></li>
+        <li><a href="link2" target="_blank">LinkedIn</a></li>
+      </ul>
+      <p id="copyright">Copyright &copy; John Smith</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
