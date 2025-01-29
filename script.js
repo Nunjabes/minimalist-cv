@@ -55,3 +55,20 @@ document.getElementById("print-cv").addEventListener("click", () => {
 document.getElementById("toggle-theme").addEventListener("click", () => {
   document.body.classList.toggle("dark-mode");
 });
+
+const title = document.getElementById("presentation-title");
+const letter = document.getElementById("cover-letter");
+
+title.addEventListener("mouseover", () => {
+    letter.style.display = "block";
+    setTimeout(() => {
+        letter.style.opacity = "1";
+    }, 10);
+});
+
+title.addEventListener("mouseout", () => {
+    letter.style.opacity = "0";
+    setTimeout(() => {
+        letter.style.display = "none";
+    }, 500);
+});
