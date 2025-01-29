@@ -84,3 +84,29 @@ body.dark-mode {
 body.dark-mode a {
     color: #4a90e2;
 }
+
+/* Modo oscuro */
+body.dark-mode {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Cambia el color de los enlaces en modo oscuro */
+body.dark-mode a {
+  color: #4a90e2;
+}
+
+/* Hace que las líneas de la tabla sean blancas en modo oscuro */
+body.dark-mode .skills-table th,
+body.dark-mode .skills-table td {
+  border-color: #fff;
+}
+
+/* Cambia el color de fondo de las celdas para mayor contraste */
+body.dark-mode .skills-table th {
+  background-color: #222;
+}
+
+body.dark-mode .skills-table td {
+  background-color: #111;
+}
