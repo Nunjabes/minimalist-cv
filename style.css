@@ -1,9 +1,10 @@
-body {
+/body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 20px;
   background-color: #ffffff;
   color: #000;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 header {
@@ -33,6 +34,9 @@ header p {
 
 section {
   margin-bottom: 20px;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
 h2 {
@@ -77,32 +81,19 @@ ul li {
 }
 
 body.dark-mode {
-    background-color: #000;
-    color: #fff;
-}
-
-body.dark-mode a {
-    color: #4a90e2;
-}
-
-/* Modo oscuro */
-body.dark-mode {
   background-color: #000;
   color: #fff;
 }
 
-/* Cambia el color de los enlaces en modo oscuro */
 body.dark-mode a {
   color: #4a90e2;
 }
 
-/* Hace que las líneas de la tabla sean blancas en modo oscuro */
 body.dark-mode .skills-table th,
 body.dark-mode .skills-table td {
   border-color: #fff;
 }
 
-/* Cambia el color de fondo de las celdas para mayor contraste */
 body.dark-mode .skills-table th {
   background-color: #222;
 }
@@ -124,4 +115,31 @@ body.dark-mode .skills-table td {
   padding: 15px;
   border-left: 4px solid #000;
   border-radius: 5px;
+}
+
+/* Tooltip Styles */
+.tooltip {
+  position: absolute;
+  background-color: #000;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 12px;
+  z-index: 1000;
+}
+
+
+body.dark-mode section#presentation-title,
+body.dark-mode #cover-letter {
+  color: #000000; /* Cambia el color del texto a blanco en modo oscuro */
+}
+
+body.dark-mode {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Si quieres cambiar el fondo también */
+body.dark-mode section#cover-letter {
+  background-color: #222; /* Cambia el fondo para una mejor visibilidad */
 }
